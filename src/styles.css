@@ -1,1 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Sign in */
+.signin {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 80px;
+  /* identical to box height */
+  text-align: center;
+
+  color: #ffffff;
+}
+
+/* Sign in and start managing your candidates! */
+.comemnt-signin {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  text-align: center;
+
+  color: #ffffff;
+}
+
+/* Username */
+.username {
+  background: #224957;
+  border-radius: 10px;
+
+  /* Login */
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  text-align: center;
+
+  color: #ffffff;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.center-h {
+  justify-content: center;
+}
+.center-v {
+  align-items: center;
+}
