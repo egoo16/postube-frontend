@@ -65,6 +65,8 @@ const importsModule = [
   MatRadioModule,
   MatDatepickerModule,
   MatTooltipModule,
+  FormsModule,
+  ReactiveFormsModule,
 ];
 
 @NgModule({

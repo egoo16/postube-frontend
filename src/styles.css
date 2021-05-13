@@ -13,7 +13,7 @@
 }
 
 /* Sign in and start managing your candidates! */
-.comemnt-signin {
+.comment-signin {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -25,7 +25,11 @@
 }
 
 /* Username */
-.username {
+.input-login {
+  position: absolute;
+
+  width: 300px;
+  height: 45px;
   background: #224957;
   border-radius: 10px;
 
@@ -61,4 +65,38 @@ footer {
 }
 .center-v {
   align-items: center;
+}
+
+/* Rectangle */
+.btn-login {
+  /* login */
+
+  position: absolute;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #ffffff;
+  width: 300px;
+  height: 45px;
+  position: absolute;
+  background: #2c9c64;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.check-remember {
+  /* Rectangle 1 */
+
+  position: absolute;
+  width: 18px;
+  height: 17px;
+
+  background: #224957;
+  border-radius: 5px;
 }

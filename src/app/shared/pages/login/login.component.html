@@ -6,25 +6,39 @@
             <label>Iniciar Sesión en </label> <br>
             <label>PostTube</label>
         </div>
-        <div class="col-md-12 comemnt-signin">
+        <div class="col-md-12 comment-signin">
 
             <label> Hola! Inicia sesión con los datos proporcionados </label>
         </div>
 
         <div class="login-wrapper " fxLayout="row" fxLayoutAlign="center center">
             <mat-card-content>
-                <div class="row">
-                    <div class="col-md-12">
-                        <mat-form-field class="example-full-width">
-                            <input class="username" placeholder="Username">
-                        </mat-form-field>
+                <form ngNativeValidate #f="ngForm" class="form-horizontal form-material" (ngSubmit)="ingrear(f)">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <mat-form-field class="example-full-width">
+                                <input [ngModel]="usuario" name="usuario" class="input-login" placeholder="Username"
+                                    required>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-12">
+                            <mat-form-field class="example-full-width">
+                                <input ngModel name="password" type="password" class="input-login"
+                                    placeholder="Password" required>
+                            </mat-form-field>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="custom-control custom-checkbox">
+                                <input [(ngModel)]="recuerdame" name="recuerdame" type="checkbox"
+                                    class="custom-control-input check-remember" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Recuerdame</label>
+                            </div>
+                            <button class="btn btn-login" type="submit">Ingresar</button>
+                        </div>
+
                     </div>
-                    <div class="col-md-12">
-                        <mat-form-field class="example-full-width">
-                            <input type="password" class="username" placeholder="Password">
-                        </mat-form-field>
-                    </div>
-                </div>
+                </form>
             </mat-card-content>
 
         </div>
